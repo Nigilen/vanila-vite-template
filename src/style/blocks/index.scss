@@ -1,0 +1,12 @@
+/* порядок подключаемых файлов имеет значение
+  родительские лучше подключать внизу */
+
+@import "title";
+@import "text";
+@import "link";
+
+/* главные блоки */
+
+@import "body";
+@import "main";
+@import "header";

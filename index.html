@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<!-- Обязательно менять значение lang -->
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<!-- SEO -->
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="referrer" content="no-referrer" />
+		<!-- SEO -->
+		<title>Template</title>
+		<!-- main скрипт, без него ничего не будет работать -->
+		<script type="module" defer src="/src/main.js"></script>
+		<!-- main скрипт, без него ничего не будет работать -->
+		<!-- БИНОМ скрипт -->
+		<script async="" src="../static/fbevents.js"></script>
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return
+				n = f.fbq = function () {
+					n.callMethod
+						? n.callMethod.apply(n, arguments)
+						: n.queue.push(arguments)
+				}
+				if (!f._fbq) f._fbq = n
+				n.push = n
+				n.loaded = !0
+				n.version = "2.0"
+				n.queue = []
+				t = b.createElement(e)
+				t.async = !0
+				t.src = v
+				s = b.getElementsByTagName(e)[0]
+				s.parentNode.insertBefore(t, s)
+			})(
+				window,
+				document,
+				"script",
+				"https://connect.facebook.net/en_US/fbevents.js"
+			)
+			var queryParams = new URLSearchParams(window.location.search)
+			var customParam = queryParams.get("pixel")
+			fbq("init", customParam)
+			fbq("trackCustom", "Install")
+		</script>
+		<!-- БИНОМ скрипт -->
+	</head>
+	<body class="body">
+		<main class="main">
+			<header class="header">
+				<nav>
+					<a href="asda">asdada</a>
+				</nav>
+				<picture class="logo">
+					<img
+						src="img/logo/logo.svg"
+						class="logo__img"
+						alt="Bet On Red Casino"
+						width="268"
+						height="148"
+					/>
+				</picture>
+			</header>
+
+			<h1
+				class="title title_is_uppercase title_size_sm title_theme_primary main__title"
+			>
+				Hello Template
+			</h1>
+		</main>
+	</body>
+</html>

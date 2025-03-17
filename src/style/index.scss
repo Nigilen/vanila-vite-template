@@ -1,0 +1,16 @@
+@import "normalize.css";
+@import "variables";
+@import "fonts";
+@import "blocks";
+
+body {
+	font-family: var(--main-font-family);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}

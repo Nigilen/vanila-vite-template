@@ -1,0 +1,29 @@
+@import "@s/mixin";
+
+.link {
+	&_theme_primary {
+		color: var(--color-primary);
+	}
+
+	&_theme_secondary {
+		color: var(--color-secondary);
+	}
+	
+	&_theme_action {
+		color: var(--color-action);
+	}
+
+	&_size_sm {
+		font-size: 12px;
+		line-height: 2.1;
+		text-align: center;
+
+		@include media-lg {
+			font-size: 20px;
+		}
+	}
+
+	&_is_uppercase {
+		text-transform: uppercase;
+	}
+}

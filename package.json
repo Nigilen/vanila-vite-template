@@ -1,0 +1,35 @@
+{
+	"name": "zm-template-project-vite",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --host",
+		"build": "vite build && stylelint \"**/*.scss\"",
+		"preview": "vite preview --host",
+		"stylelint": "stylelint \"**/*.scss\"",
+		"squoosh": "node squoosh.js",
+		"gulp": "gulp"
+	},
+	"devDependencies": {
+		"@squoosh/lib": "^0.5.3",
+		"autoprefixer": "^10.4.20",
+		"gulp": "^4.0.2",
+		"gulp-ttf2woff": "^1.1.1",
+		"gulp-ttftowoff2": "^1.0.1",
+		"postcss": "^8.4.47",
+		"sass": "^1.62.1",
+		"stylelint-config-standard-scss": "^9.0.0",
+		"stylelint-scss": "^5.0.0",
+		"terser": "^5.17.3",
+		"vite": "^5.4.2"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"> 1%",
+		"not dead"
+	]
+}
